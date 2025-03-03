@@ -6,7 +6,7 @@ function Registration() {
       <h1></h1>
       <form>
         <h2>
-          Cоздайте Вашу <br></br> учетную запись
+          Cоздайте Вашу <br></br> учетную запись test
         </h2>
         <input type='username' placeholder='Введите 4-3-1' />
         <input type='password' placeholder='Введите пароль' />
