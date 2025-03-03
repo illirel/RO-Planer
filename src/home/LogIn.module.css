@@ -1,0 +1,53 @@
+.logIn {
+  @apply h-screen w-screen flex items-center justify-center flex-col;
+}
+
+.logIn > h1 {
+  @apply h-full text-6xl text-center flex items-center font-extrabold  text-[#ffffff];
+}
+
+.logIn > form {
+  @apply w-max h-full p-3 border-4 border-[#17AD8A]  rounded-3xl py-16 px-12 bg-[#1f2929];
+  animation: slideIn 1s ease-in-out;
+}
+.logIn > form > h2 {
+  @apply text-2xl mb-12  text-center text-[#ffffff] font-extrabold;
+}
+.logIn > form > input {
+  @apply block py-1.5 px-3 rounded-lg mb-2 w-64 border border-transparent bg-black/30 placeholder:text-white/60 outline-none;
+  transition: border-color 0.35s linear;
+}
+.logIn > form > input:focus {
+  @apply border-[#17AD8A] bg-[#1c61520e];
+}
+.logIn > form > input:hover {
+  @apply border-[#04eebb71];
+}
+
+.logIn > form > button {
+  @apply text-lg font-medium uppercase py-1 px-3 rounded-lg w-full border-2 border-[#17AD8A] inline-block mt-2 bg-transparent;
+  transition: box-shadow 0.4s linear, background-color 0.4s linear;
+}
+.logIn > form > button:hover {
+  @apply bg-[#04eebb71];
+}
+.logIn > form > section > div > a {
+  @apply absolute mt-4 cursor-pointer text-[#92a19e];
+}
+.logIn > form > section > div > a:hover {
+  @apply text-[#17AD8A];
+}
+.logIn > footer {
+  @apply w-64 h-full flex items-end  pb-8;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
